@@ -15,7 +15,7 @@ a{ color:var(--link); text-decoration:none; }
 a:hover{ text-decoration:underline; }
 .post-title{ margin:0 0 .25rem 0; line-height:1.2; }
 .post-meta{ color:var(--muted); margin:0 0 1.5rem 0; }
-.post-list{ list-style:none; padding:0; margin:1rem 0; }
+.post-list{ list-style:none; padding:0; margin:1rem 0; font-size: 100px; }
 .post-list li{ margin:.5rem 0; }
 .post-date{ color:var(--muted); margin-right:.5rem; }
 img{ max-width:100%; height:auto; display:block; margin:1rem auto; }
