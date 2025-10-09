@@ -44,6 +44,6 @@ Expanding reserves can unlock advanced features like yield farming and payments 
 DebtCoin's reserve management strategy will evolve as the token grows. Transparency, robust liquidity control, and scenario testing are critical to building a stable, inflation-protected digital currency. Further exploration and scenario testing will refine DebtCoin's role as both a financial tool and a fiscal critique.
 
 > This is the second article in a 3-part series on DebtCoin: \
-> [DebtCoin: A Stablecoin Pegged to the United States National Debt](/blog/debtcoin-stablecoin) \
-> [DebtCoin: Reserve Management](/blog/debtcoin-reserves) (current) \
-> [DebtCoin: Governance Framework](/blog/debtcoin-governance)
+> [DebtCoin: A Stablecoin Pegged to the United States National Debt](/debtcoin-stablecoin) \
+> [DebtCoin: Reserve Management](/debtcoin-reserves) (current) \
+> [DebtCoin: Governance Framework](/debtcoin-governance)

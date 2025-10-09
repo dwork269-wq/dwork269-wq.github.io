@@ -112,7 +112,7 @@ _Can USDM replace USDC as a fairer stablecoin? What integrations (PSMs, LPs, fia
 
 ### **Fiat Rails & Diversification Beyond USDC**
 
-- Can USDM **add fiat on/off ramps** to convert **fiat directly into USDM**? It might serve as a good use case for **[cross-border-payments](/blog/best-use-case-cross-border-stablecoin-payments)**
+- Can USDM **add fiat on/off ramps** to convert **fiat directly into USDM**? It might serve as a good use case for **[cross-border-payments](/best-use-case-cross-border-stablecoin-payments)**
 - Should USDM **diversify beyond USDC**, given its **single point of failure risk**?
 - Would this make **USDM a more sustainable base stablecoin**?
 
@@ -132,7 +132,7 @@ _How does Mountain Protocol manage liquidity and risk? Can stress-testing stable
 - Could a new **risk-hedging agent** profit by arbitraging stablecoin depegs?
 - For example, if USDC **loses its peg due to a banking crisis**, could this agent **trade around such events?**
 - Can this agent detect **interlinked risks**, like USDM holding USDC, which in turn may rely on the same banks as USDM's reserves?
-- Could **[DebtCoin](/blog/the-debtcoin-token)** hedge against **U.S. debt servicing risks** in the unlikely case of government defaults?
+- Could **[DebtCoin](/the-debtcoin-token)** hedge against **U.S. debt servicing risks** in the unlikely case of government defaults?
 
 ---
 

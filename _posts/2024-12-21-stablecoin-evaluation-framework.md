@@ -47,7 +47,7 @@ Governance frameworks underpin all aspects of stablecoin operation, from reserve
 - Implementation mechanisms: How decisions are executed, whether through direct team action or programmatically through smart contracts
 - Contextual variations: How governance adapts to different situations, including emergency measures and veto powers
 
-_Read: [Governance Framework for DebtCoin - a stablecoin I've envisioned](/blog/debtcoin-governance)_
+_Read: [Governance Framework for DebtCoin - a stablecoin I've envisioned](/debtcoin-governance)_
 
 ## Conclusion
 

@@ -7,7 +7,7 @@ permalink: /stablecoin-payments-aggregation-dynamic-auctions-zero-liability/
 
 # Stablecoin Payments Aggregation Through Dynamic Micro Auctions and Zero Liability Protection
 
-I've been thinking about persistent pain points in stablecoin payment orchestration, particularly in [non-US corridors](/blog/best-use-case-cross-border-stablecoin-payments) where onramp/offramp complexities arise due to immature crypto-fiat liquidity. Stablecoin payments, after all, seem like the perfect catalyst for driving institutional crypto adoption.
+I've been thinking about persistent pain points in stablecoin payment orchestration, particularly in [non-US corridors](/best-use-case-cross-border-stablecoin-payments) where onramp/offramp complexities arise due to immature crypto-fiat liquidity. Stablecoin payments, after all, seem like the perfect catalyst for driving institutional crypto adoption.
 
 My idea? Inject market dynamics by holding mini auctions at every critical node of a transaction. The mechanism is simple: let liquidity providers bid in real time - addressing cost, speed, and trust issues - while a robust zero liability framework ensures that any fraud or failure is covered by the payments aggregator, not the user or liquidity provider.
 
@@ -40,7 +40,7 @@ For optimal experience, KYC and verification are handled by the aggregator.
 3. **Settlement:**  
    Funds are transferred from the buyer's USD account to the aggregator's USD account. Next, the funds are converted to the aggregator's USDC wallet (which can be done in batches for efficiency). The funds are then swapped with the liquidity provider, who sends them to the aggregator EURC wallet. Finally, the funds are transferred either to the seller's EUR fiat account or remain in the EURC wallet, based on the buyer's request.
 
-Buyers will quickly realize that fiat-to-fiat transfers incur higher fees than crypto-to-crypto transactions, encouraging them to hold more funds in stablecoins. This shift can spark a virtuous cycle of improved rates, enhanced liquidity management, and the proliferation of additional crypto services. A shift from USDC to [inflation-resistant stables such as the now-acquired USDM](/blog/mountain-protocol-usdm-questions-ideas) may also be a good thing.
+Buyers will quickly realize that fiat-to-fiat transfers incur higher fees than crypto-to-crypto transactions, encouraging them to hold more funds in stablecoins. This shift can spark a virtuous cycle of improved rates, enhanced liquidity management, and the proliferation of additional crypto services. A shift from USDC to [inflation-resistant stables such as the now-acquired USDM](/mountain-protocol-usdm-questions-ideas) may also be a good thing.
 
 ## Risk Scoring
 

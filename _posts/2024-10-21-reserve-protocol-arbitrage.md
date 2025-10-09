@@ -83,5 +83,5 @@ Collateral devaluation or inaccessibility (e.g., During the SVB collapse, Circle
 Arbitrage is key to maintaining the RToken peg, but risks like illiquidity, friction, regulation, and volatility can disrupt it. Mitigation through liquidity prioritization, monitoring, and proactive responses enhances stability and preserves the peg under stress.
 
 > This article is part of a series on the Reserve Protocol: \
-> [Notes on the Reserve Protocol — Governance](/blog/reserve-protocol-governance) \
-> [Notes on the Reserve Protocol — Arbitrage](/blog/reserve-protocol-arbitrage) (current)
+> [Notes on the Reserve Protocol — Governance](/reserve-protocol-governance) \
+> [Notes on the Reserve Protocol — Arbitrage](/reserve-protocol-arbitrage) (current)
