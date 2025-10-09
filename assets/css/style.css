@@ -20,6 +20,7 @@ body {
   background: var(--bg);
   color: var(--fg);
   font-family: var(--font);
+  text-decoration: none;
 }
 
 /* Type scale that adapts with viewport (clamp(min, vw, max)) */
