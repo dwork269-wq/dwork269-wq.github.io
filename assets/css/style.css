@@ -1,6 +1,6 @@
 /* Light, minimalist, responsive – no JS, no webfonts */
 :root{
-  color-scheme: light;        /* ignore system dark theme */
+  color-scheme: dark;        /* ignore system dark theme */
   --bg:#ffffff; --fg:#151515; --muted:#707070; --link:#0645ad;
   --maxw:760px;
   --font:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Inter,Arial,system-ui,sans-serif;
