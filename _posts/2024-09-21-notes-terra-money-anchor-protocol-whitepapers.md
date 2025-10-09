@@ -5,8 +5,6 @@ tags: [Crypto, Payments]
 permalink: /notes-terra-money-anchor-protocol-whitepapers/
 ---
 
-# Quick Notes on the Terra and Anchor Whitepapers
-
 Exploring some stablecoin history today.
 
 In this post, I jot down quick comments and immediate impressions while reading the Terra Money and Anchor Protocol whitepapers.

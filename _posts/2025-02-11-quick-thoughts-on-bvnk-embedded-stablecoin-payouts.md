@@ -5,8 +5,6 @@ tags: [Crypto, Payments]
 permalink: /quick-thoughts-on-bvnk-embedded-stablecoin-payouts/
 ---
 
-# Quick Notes on BVNK Embedded Stablecoin Payouts
-
 Fiddled around with BVNK's [developer sandbox](https://signup.sandbox.bvnk.com/create-dev-account) today and went through their developer documentation. They seem to have released an embedded stablecoin payouts feature, which caught my interest given my focus on payments and stablecoins.
 
 Jotting down quick points I'd like to clarify.

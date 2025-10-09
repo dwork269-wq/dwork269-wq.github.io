@@ -5,8 +5,6 @@ tags: [Crypto, Payments]
 permalink: /the-debtcoin-token/
 ---
 
-# The DebtCoin Memecoin
-
 This page serves as a resource for those discovering the [DebtCoin memecoin](https://www.birdeye.so/token/5HfbnjQUM81DP8HADarK8njRomgLTg4Ebtmx4KXkqggB?chain=solana).
 
 _Note: As of February 5th, 2025, The liquidity pool for DebtCoin is now LIVE! Spend a few dollars and show your support!_

@@ -5,8 +5,6 @@ tags: [Crypto, Payments]
 permalink: /why-stablecoins/
 ---
 
-# Why Stablecoins
-
 As much as I enjoy exploring stablecoins, I like going back every now and then to ask myself the fundamental question: why do we even need them? While this may easily be answered by those who understand crypto, it is something I have to think about given I'm still more comfortable with the TradFi world.
 
 Any currency needs to be judged on what it does - whether it is a unit of account, a store of value, or a medium of exchange. Memecoins offer value through humor! Bitcoin perhaps only barely ticks the store of value box, with its speculative value destined to eventually peak (either at $150K or $1M or whatever).

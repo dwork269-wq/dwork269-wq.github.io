@@ -5,8 +5,6 @@ tags: [Payments]
 permalink: /should-card-rewards-banned/
 ---
 
-# Should card rewards be banned?
-
 Imagine you don't own a credit card and shop for $100 of groceries using a debit card. The supermarket pays a $1 interchange fee to payment networks like Visa or Amex, reducing its revenue to $99. This fee is split between the network and banks to cover processing costs.
 
 Now consider a premium rewards cardholder making the same $100 purchase. The payment network provides $2 in rewards points, so it charges the supermarket $3 in interchange fees, leaving them with $97. To offset this loss, the supermarket raises prices, making the $100 purchase cost $102. The debit card user pays the full $102, while the rewards cardholder effectively pays $100 after receiving points.

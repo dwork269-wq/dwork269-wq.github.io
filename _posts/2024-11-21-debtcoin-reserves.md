@@ -5,8 +5,6 @@ tags: [Crypto, Payments]
 permalink: /debtcoin-reserves/
 ---
 
-# DebtCoin: Reserve Management
-
 This article outlines strategies for managing DebtCoin reserves effectively, focusing on rollout plans, scenario handling, and long-term goals.
 
 ## Rollout

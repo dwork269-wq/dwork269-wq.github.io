@@ -5,8 +5,6 @@ tags: [Crypto, Payments]
 permalink: /mountain-protocol-usdm-questions-ideas/
 ---
 
-# **Mountain Protocol - USDM Questions and Ideas**
-
 This post presents **questions and thoughts** I have after reviewing the [Mountain Protocol Documentation](https://docs.mountainprotocol.com/). Additionally, I explore potential structural changes to USDM, big-picture implications of stablecoins, and future directions for Mountain Protocol.
 
 ---

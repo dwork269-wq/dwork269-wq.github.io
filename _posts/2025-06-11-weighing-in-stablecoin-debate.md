@@ -5,8 +5,6 @@ tags: [Crypto, Payments]
 permalink: /weighing-in-stablecoin-debate/
 ---
 
-# Weighing in on the Stablecoin Debate
-
 In the last few weeks, there's been a lot of chatter about whether stablecoins offer anything beyond regulatory arbitrage. Critics argue they're just slick wrappers around fiat, used to dodge capital controls or skirt around legacy infrastructure. And beyond use cases in high-inflation or emerging economies, they don't offer much. But I think the real potential of stablecoins lies in eliminating that divide between banking and finance.
 
 Say you send me $50 after dinner, that money just sits there. Why shouldn't it be auto-invested into a low-risk, on-chain ETF the second it hits my wallet? Why shouldn't I be able to redeem or spend it instantly too?

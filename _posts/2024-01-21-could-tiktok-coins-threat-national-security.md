@@ -5,8 +5,6 @@ tags: [Payments]
 permalink: /could-tiktok-coins-threat-national-security/
 ---
 
-# Could TikTok Coins be a threat to national security?
-
 Discussions on TikTok and cryptocurrencies often address national security, but their intersection — TikTok Coins — remains less explored. TikTok Coins are digital currencies purchased with real money within the TikTok app. They are used to tip content creators during live streams and are categorized into values like diamonds and roses.
 
 Unlike Meta's failed Libra project, TikTok has taken a subtler approach. While Meta aimed to build a global payment system backed by reserves, TikTok restricts Coins to gifting creators and provides little public information about circulation or volume. Criticism has mostly been limited to isolated cases, like children overspending on Coins.

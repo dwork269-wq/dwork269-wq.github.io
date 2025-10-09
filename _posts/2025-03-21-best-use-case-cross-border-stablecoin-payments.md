@@ -5,8 +5,6 @@ tags: [Crypto, Payments]
 permalink: /best-use-case-cross-border-stablecoin-payments/
 ---
 
-# Best Use Case for Cross-Border Stablecoin Payments
-
 Cross-border payments encompass four primary use cases: B2B, C2B, B2C, and C2C. Each implements different operational models, such as traditional banks using SWIFT and currency swaps or remittance providers like Wise using optimized local settlement models.
 
 Stablecoins present an opportunity for disruption, but their utility differs by scenario. Here's an analysis of existing TradFi cross-border solutions based on cost, time, ease of use, CLV/CAC* and transaction volumes *(based on my personal understanding, not backed by data)\*.

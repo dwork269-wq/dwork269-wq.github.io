@@ -5,8 +5,6 @@ tags: [Crypto, Payments]
 permalink: /reserve-protocol-governance/
 ---
 
-# Quick Notes on the Reserve Protocol — Governance
-
 I'm planning to explore the Reserve Protocol, a fascinating cryptocurrency with a broad vision of improving lives and not just serving as a speculative asset. It aims to hedge against inflation, employs innovative technology and governance solutions, and supports citizens in struggling economies like Venezuela.
 
 I'll watch a [series of videos](https://youtube.com/playlist?list=PLsGy6XUusXQMuHBnIE_iARXCcLjbQ21XW&feature=shared) by the founders and note my thoughts.

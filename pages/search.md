@@ -16,7 +16,7 @@ permalink: /search/
   </p>
 </div>
 
-<div id="searchResults" style="display: none;">
+<div id="searchResults" style="display:none;">
   <h2>Search Results</h2>
   <div id="resultsList"></div>
   <p><a href="#" onclick="clearSearch()" style="color: var(--link);">← Back to all posts</a></p>
@@ -24,152 +24,100 @@ permalink: /search/
 
 <div id="allPosts">
   <h2>All Posts</h2>
-  <div class="blog-posts">
-  {% assign current_year = "" %}
+
+  {% assign posts = site.posts | sort: "date" | reverse %}
+  {% assign current_year  = "" %}
   {% assign current_month = "" %}
-  {% for post in site.posts %}
-    {% assign post_year = post.date | date: "%Y" %}
-    {% assign post_month = post.date | date: "%B" %}
-    
-    {% if current_year != post_year %}
-      {% if current_year != "" %}
-        </ul>
-      {% endif %}
-      <h3 class="year-header">{{ post_year }}</h3>
-      <ul class="post-list">
-      {% assign current_year = post_year %}
-      {% assign current_month = "" %}
+
+  <div class="blog-posts">
+  {% for post in posts %}
+    {% assign y = post.date | date: "%Y" %}
+    {% assign m = post.date | date: "%B" %}
+
+    {% if y != current_year %}
+      {%- if current_month != "" -%}</ul>{%- assign current_month = "" -%}{% endif %}
+      <h3 class="year-header">{{ y }}</h3>
+      {% assign current_year = y %}
     {% endif %}
-    
-    {% if current_month != post_month %}
-      {% if current_month != "" %}
-        </ul>
-      {% endif %}
-      <h4 class="month-header">{{ post_month }}</h4>
+
+    {% if m != current_month %}
+      {%- if current_month != "" -%}</ul>{% endif %}
+      <h4 class="month-header">{{ m }}</h4>
       <ul class="month-posts">
-      {% assign current_month = post_month %}
+      {% assign current_month = m %}
     {% endif %}
-    
-    <li data-title="{{ post.title | downcase }}" data-content="{{ post.content | strip_html | downcase }}" data-tags="{{ post.tags | join: ' ' | downcase }}">
+
+    <li
+      data-title="{{ post.title | downcase }}"
+      data-content="{{ post.content | strip_html | downcase }}"
+      data-tags="{{ post.tags | join: ' ' | downcase }}"
+    >
       <span class="post-date">{{ post.date | date: "%-d" }}</span>
       <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
       {% if post.tags and post.tags.size > 0 %}
         <span class="post-tags">
           {% for tag in post.tags %}
-            <a href="{{ '/tags/#' | append: tag | relative_url }}" class="tag">{{ tag }}</a>
+            {% assign tag_id = tag | strip | downcase | slugify: 'default' %}
+            <a href="{{ '/tags/#' | append: tag_id | relative_url }}" class="tag">{{ tag }}</a>
           {% endfor %}
         </span>
       {% endif %}
     </li>
   {% endfor %}
-    </ul>
-  </ul>
+  {%- if current_month != "" -%}</ul>{% endif %}
   </div>
 </div>
 
 <script>
-function searchPosts(event) {
+function searchPosts(event){
   event.preventDefault();
-  const query = document.getElementById('searchInput').value.toLowerCase().trim();
-  
-  if (!query) {
-    clearSearch();
-    return;
-  }
-  
-  const allPosts = document.querySelectorAll('#allPosts .month-posts li');
+  const q = document.getElementById('searchInput').value.toLowerCase().trim();
+  if(!q){ return clearSearch(); }
+
+  const nodes = document.querySelectorAll('#allPosts .month-posts li');
   const results = [];
-  
-  allPosts.forEach(post => {
-    const title = post.getAttribute('data-title');
-    const content = post.getAttribute('data-content');
-    const tags = post.getAttribute('data-tags');
-    
-    if (title.includes(query) || content.includes(query) || tags.includes(query)) {
-      results.push(post.cloneNode(true));
+  nodes.forEach(li => {
+    const title = li.getAttribute('data-title') || '';
+    const content = li.getAttribute('data-content') || '';
+    const tags = li.getAttribute('data-tags') || '';
+    if (title.includes(q) || content.includes(q) || tags.includes(q)) {
+      results.push(li.cloneNode(true));
     }
   });
-  
-  if (results.length > 0) {
-    displayResults(results, query);
+
+  const wrap = document.getElementById('resultsList');
+  wrap.innerHTML = '';
+  if(results.length === 0){
+    wrap.innerHTML = `<p style="color: var(--muted);">No posts found for "${q}"</p>`;
   } else {
-    displayNoResults(query);
+    results.forEach(r => wrap.appendChild(r));
   }
-}
 
-function displayResults(results, query) {
-  const resultsList = document.getElementById('resultsList');
-  const searchResults = document.getElementById('searchResults');
-  const allPosts = document.getElementById('allPosts');
-  
-  if (results.length === 0) {
-    displayNoResults(query);
-    return;
-  }
-  
-  // Group results by year and month
-  const groupedResults = {};
-  results.forEach(result => {
-    const dateText = result.querySelector('.post-date').textContent;
-    const link = result.querySelector('a');
-    const title = link.textContent;
-    const url = link.href;
-    const tags = result.querySelector('.post-tags');
-    const tagText = tags ? tags.textContent : '';
-    
-    // Create a date object from the day number (we need to get the full date)
-    const postElement = result;
-    const dataTitle = postElement.getAttribute('data-title');
-    const dataContent = postElement.getAttribute('data-content');
-    const dataTags = postElement.getAttribute('data-tags');
-    
-    // For now, just display results in a simple list
-    const resultItem = result.cloneNode(true);
-    resultsList.appendChild(resultItem);
-  });
-  
-  searchResults.style.display = 'block';
-  allPosts.style.display = 'none';
-  
-  // Highlight search terms
-  highlightSearchTerms(query);
-}
-
-function displayNoResults(query) {
-  const resultsList = document.getElementById('resultsList');
-  resultsList.innerHTML = `<p style="color: var(--muted);">No posts found for "${query}"</p>`;
-  
   document.getElementById('searchResults').style.display = 'block';
   document.getElementById('allPosts').style.display = 'none';
+  highlightSearchTerms(q);
 }
 
-function clearSearch() {
+function clearSearch(){
   document.getElementById('searchInput').value = '';
   document.getElementById('searchResults').style.display = 'none';
   document.getElementById('allPosts').style.display = 'block';
 }
 
-function highlightSearchTerms(query) {
-  const terms = query.split(' ').filter(term => term.length > 0);
-  const results = document.querySelectorAll('#resultsList a');
-  
-  results.forEach(link => {
-    let html = link.innerHTML;
-    terms.forEach(term => {
-      const regex = new RegExp(`(${term})`, 'gi');
-      html = html.replace(regex, '<mark style="background: rgba(88, 166, 255, 0.3); padding: 0.1em 0.2em; border-radius: 2px;">$1</mark>');
-    });
-    link.innerHTML = html;
+function highlightSearchTerms(q){
+  const terms = q.split(' ').filter(Boolean);
+  const links = document.querySelectorAll('#resultsList a');
+  links.forEach(a => {
+    let html = a.innerHTML;
+    terms.forEach(t => html = html.replace(new RegExp(`(${t})`,'gi'),
+      '<mark style="background: rgba(88,166,255,.3); padding:.1em .2em; border-radius:2px;">$1</mark>'));
+    a.innerHTML = html;
   });
 }
 
-// Handle URL parameters for direct search links
-window.addEventListener('load', function() {
-  const urlParams = new URLSearchParams(window.location.search);
-  const query = urlParams.get('q');
-  if (query) {
-    document.getElementById('searchInput').value = query;
-    searchPosts({ preventDefault: () => {} });
-  }
+// support /search/?q=...
+window.addEventListener('load', () => {
+  const q = new URLSearchParams(window.location.search).get('q');
+  if(q){ document.getElementById('searchInput').value = q; searchPosts({preventDefault:()=>{}}); }
 });
 </script>

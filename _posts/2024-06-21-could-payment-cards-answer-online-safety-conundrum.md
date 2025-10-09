@@ -5,8 +5,6 @@ tags: [Payments]
 permalink: /can-payment-cards-answer-online-safety-conundrum/
 ---
 
-# Could payment cards answer the online safety conundrum?
-
 The quest for a safer internet, especially for children, often leads to discussions on digital age verification. Legislators worldwide are proposing measures to mandate online age verification. Simple solutions like ticking a box or parental control tools may soon be replaced by stricter systems. Will uploading a government ID become necessary for activities like buying alcohol online or watching R-rated content on Netflix?
 
 Age verification naturally spark privacy concerns. Social media platforms are exploring AI and facial recognition algorithms to estimate age via selfies, avoiding the need for government IDs. However, storing biometric data comes with risks, including misuse and breaches.

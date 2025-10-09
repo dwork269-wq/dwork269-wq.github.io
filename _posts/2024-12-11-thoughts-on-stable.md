@@ -5,8 +5,6 @@ tags: [Crypto, Payments]
 permalink: /thoughts-on-stable/
 ---
 
-# Quick Notes on Stable Finance
-
 I just explored [StableFinance.io](https://www.stablefinance.io/), a crypto wallet that enables users to yield farm by directly connecting with Aave.
 
 Some initial thoughts (I'll keep building on this):

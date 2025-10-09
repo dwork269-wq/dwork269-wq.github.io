@@ -5,8 +5,6 @@ tags: [Crypto, Payments]
 permalink: /reserve-protocol-arbitrage/
 ---
 
-# Quick Notes on the Reserve Protocol — Arbitrage
-
 _"The RToken peg is maintained by allowing full minting and redeeming for the underlying collateral on-chain ([Source](https://medium.com/@river_94163/mitigating-depeg-risk-e3d9e015ac8d))"._
 
 But what if the arbitrage mechanism between the chain and secondary exchanges fails? Potential deviations can cause mistrust, leading to panic selling and potential system collapse.

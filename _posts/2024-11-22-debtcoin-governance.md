@@ -5,8 +5,6 @@ tags: [Crypto, Payments]
 permalink: /debtcoin-governance/
 ---
 
-# DebtCoin: Governance Framework
-
 This article explores the governance architecture for DebtCoin, balancing centralized oversight with decentralized community input. Governance is divided into three categories: immutable components, upgradeable parameters, and hybrid processes. The goal is to ensure flexibility and stability while maintaining transparency as DebtCoin tracks the U.S. national debt.
 
 ## Key Features of DebtCoin

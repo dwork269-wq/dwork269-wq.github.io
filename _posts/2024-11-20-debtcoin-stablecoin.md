@@ -5,8 +5,6 @@ tags: [Crypto, Payments]
 permalink: /debtcoin-stablecoin/
 ---
 
-# DebtCoin: A Stablecoin Pegged to the United States National Debt
-
 ## Abstract
 
 DebtCoin is a stablecoin I propose that is pegged to the U.S. national debt, serving as a transparent crypto token that tracks arguably the world's most significant economic metric. It combines the stability of traditional stablecoins with a critique of U.S. fiscal policy.

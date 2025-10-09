@@ -5,8 +5,6 @@ tags: [Payments]
 permalink: /why-india-upi-will-fail/
 ---
 
-# Why India's UPI will fail
-
 UPI (Unified Payments Interface) has transformed India's economy, enabling seamless transactions across markets, offices, and homes. Indians use it for everything from paying bills to making purchases, bypassing the "cards phase" of payments by jumping directly from "cash" to "mobile."
 
 But is UPI truly a success? While widely adopted, its long-term sustainability is questionable.

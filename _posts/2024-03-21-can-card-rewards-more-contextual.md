@@ -5,8 +5,6 @@ tags: [Payments]
 permalink: /can-card-rewards-more-contextual/
 ---
 
-# Can card rewards be made more contextual?
-
 Have you ever felt that the reward points offered by your card issuer don't reflect your consumption habits? Could there be a way to make these rewards more 'contextual' and encourage you to shop at local businesses?
 
 Say a card issuer triangulates where you live based on your payment history. It wouldn't need your mobile GPS data but could analyze 'physical' transactions you typically make near your home. By examining purchases like groceries, gas, or medicine, the issuer can leverage merchant zip codes to estimate your living area.

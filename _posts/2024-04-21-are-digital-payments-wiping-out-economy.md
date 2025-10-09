@@ -5,8 +5,6 @@ tags: [Payments]
 permalink: /are-digital-payments-wiping-out-economy/
 ---
 
-# Are digital payments wiping out the economy?
-
 In today's digital age, money flows frictionlessly from one digital transaction to another. Invisible to consumers though, is a contentious commission called the "interchange fee" that banks and payment networks levy for each transaction processed.
 
 Imagine making a $50 purchase using your credit card. The merchant pockets $49, after losing about 2% in interchange fees. When the merchant spends that $49 with another seller, another 2% is lost. Extrapolate this, play this out for a hundred exchanges, and your initial $50 dwindles to a mere $5. The rest is gobbled up by the banking system, resulting in 90% of the original monetary value ostensibly disappearing into financial ether.

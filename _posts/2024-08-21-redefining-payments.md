@@ -5,8 +5,6 @@ tags: [Crypto, Payments]
 permalink: /redefining-payments/
 ---
 
-# Redefining Payments: A Smarter Future for Merchants and Consumers
-
 Today's payment system is bloated and dominated by entrenched interests. This article proposes a crypto-based framework to eliminate banks and payment networks as intermediaries, solving issues like high interchange fees that burden merchants.
 
 ![Payment System Diagram]({{ "/assets/img/image.png" | relative_url | uri_escape }})

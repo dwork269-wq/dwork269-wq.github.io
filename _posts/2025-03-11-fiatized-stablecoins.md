@@ -5,8 +5,6 @@ tags: [Crypto, Payments]
 permalink: /fiatized-stablecoins/
 ---
 
-# Fiatized Stablecoins
-
 There's been a transition in the crypto space from decentralized currencies like Bitcoin to fiat-pegged stablecoins. We're now witnessing the next transition - what I call the shift from "extractive" stablecoins (where a rise in inflation raises the yield on these coins, enriching the issuers while making holders poorer) to yield-bearing stablecoins. I believe we're only at the beginning of this shift and that this might just be the major crypto breakthrough that brings it into mainstream banking.
 
 Stablecoins function similarly to ETFs in that they have separate layers for reserves and crypto protocols. The reserves are typically managed and invested in cash and treasuries, while smart contracts facilitate the minting and burning of tokens. These two layers are connected through careful liquidation processes and mechanisms.
