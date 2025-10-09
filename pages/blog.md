@@ -18,7 +18,7 @@ permalink: /blog/
       </ul>
     {% endif %}
     <h2 class="year-header">{{ post_year }}</h2>
-    <ul class="post-list">
+    <ul class="post-list list">
     {% assign current_year = post_year %}
     {% assign current_month = "" %}
   {% endif %}
