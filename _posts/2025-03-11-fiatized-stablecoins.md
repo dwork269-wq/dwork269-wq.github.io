@@ -41,9 +41,9 @@ Essentially, just as stablecoin issuers centrally operate reserves that are inve
 
 **The idea is to therefore have a fiat layer on top of the stablecoin layer, which itself sits on top of another fiat layer—bringing it as close to the regular end-user as possible.** Picture an app that allows users to buy stablecoins with their cards and bank accounts. I've shared a few basic prototype screenshots so I could visualize this concept.
 
-![Screenshot 1]({{ "/assets/img/_22. Screenshot 1.png" | relative_url | uri_escape }})
-![Screenshot 2]({{ "/assets/img/_22. Screenshot 2.png" | relative_url | uri_escape }})
-![Screenshot 3]({{ "/assets/img/_22. Screenshot 3.png" | relative_url | uri_escape }})
+![Screenshot 1]({{ "/assets/image/_22. Screenshot 1.png" | relative_url | uri_escape }})
+![Screenshot 2]({{ "/assets/image/_22. Screenshot 2.png" | relative_url | uri_escape }})
+![Screenshot 3]({{ "/assets/image/_22. Screenshot 3.png" | relative_url | uri_escape }})
 
 ## Why does this matter?
 

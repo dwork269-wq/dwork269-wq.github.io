@@ -9,7 +9,7 @@ permalink: /stablecoin-evaluation-framework/
 
 Having studied numerous stablecoins - both successful projects and notable failures - I've developed a broad framework to evaluate any stablecoin project. This framework examines five core components and governance.
 
-![Stablecoin Evaluation Framework]({{ "/assets/img/_15. Stablecoin Evaluation Framework.png" | relative_url | uri_escape }})
+![Stablecoin Evaluation Framework]({{ "/assets/image/_15. Stablecoin Evaluation Framework.png" | relative_url | uri_escape }})
 
 ## 1. Reserve Management
 
