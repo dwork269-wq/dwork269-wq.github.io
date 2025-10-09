@@ -1,23 +1,24 @@
 :root{
-  --bg:#ffffff; --fg:#111; --muted:#555; --link:#0645ad; --maxw:720px;
+  --bg:#fff; --fg:#151515; --muted:#707070; --link:#0645ad; --maxw:760px;
   --font:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Inter,Arial,system-ui,sans-serif;
 }
 @media (prefers-color-scheme: dark){
-  :root{ --bg:#0b0b0b; --fg:#eaeaea; --muted:#a0a0a0; --link:#8ab4f8; }
+  :root{ --bg:#0b0b0b; --fg:#e9e9e9; --muted:#a2a2a2; --link:#8ab4f8; }
 }
 *{ box-sizing:border-box; }
 html,body{ margin:0; padding:0; background:var(--bg); color:var(--fg); font:16px/1.6 var(--font); }
 .container{ max-width:var(--maxw); margin:0 auto; padding:2rem 1rem; }
-.site-header,.site-footer{ max-width:var(--maxw); margin:0 auto; padding:1rem; }
-.site-header{ display:flex; justify-content:space-between; align-items:center; }
-.site-title{ text-decoration:none; color:var(--fg); font-weight:600; }
-a{ color:var(--link); text-decoration:none; }
-a:hover{ text-decoration:underline; }
-.post-title{ margin:0 0 .25rem 0; line-height:1.2; }
-.post-meta{ color:var(--muted); margin:0 0 1.5rem 0; }
-.post-list{ list-style:none; padding:0; margin:1rem 0; font-size: 100px; }
-.post-list li{ margin:.5rem 0; }
-.post-date{ color:var(--muted); margin-right:.5rem; }
+.site-header,.site-footer{ max-width:var(--maxw); margin:0 auto; padding:1rem; display:flex; align-items:center; justify-content:space-between; }
+.site-title{ text-decoration:none; color:var(--fg); font-weight:700; letter-spacing:.2px; }
+.site-nav a{ margin-left:1rem; text-decoration:none; color:var(--fg); opacity:.85 }
+.site-nav a:hover{ opacity:1; text-decoration:underline; }
+a{ color:var(--link); }
+.post-title{ margin:0 0 .35rem 0; line-height:1.25; }
+.post-meta{ color:var(--muted); margin:0 0 1.25rem 0; }
+.post-meta .sep{ padding:0 .4rem; }
+.post-list{ list-style:none; padding:0; margin:1.25rem 0; }
+.post-list li{ margin:.55rem 0; }
+.post-date{ color:var(--muted); margin-right:.5rem; white-space:nowrap; }
+blockquote{ margin:1rem 0; padding:.5rem .9rem; border-left:3px solid var(--muted); color:var(--muted); }
 img{ max-width:100%; height:auto; display:block; margin:1rem auto; }
-img[loading]{ content-visibility:auto; }
 pre,code{ font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; }

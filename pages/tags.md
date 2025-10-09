@@ -4,15 +4,12 @@ title: Tags
 permalink: /tags/
 ---
 
-<h1>Tags</h1>
+# Tags
 {% assign tag_map = {} %}
 {% for p in site.posts %}
   {% for t in p.tags %}
-    {% if tag_map[t] %}
-      {% assign tag_map = tag_map | merge: { t: tag_map[t] | push: p } %}
-    {% else %}
-      {% assign tag_map = tag_map | merge: { t: [p] } %}
-    {% endif %}
+    {% if tag_map[t] %}{% assign tag_map = tag_map | merge: { t: tag_map[t] | push: p } %}
+    {% else %}{% assign tag_map = tag_map | merge: { t: [p] } %}{% endif %}
   {% endfor %}
 {% endfor %}
 

@@ -4,7 +4,8 @@ title: Blog
 permalink: /blog/
 ---
 
-<h1>Blog</h1>
+# Blog
+
 <ul class="post-list">
   {% assign posts_by_date = site.posts | sort: "date" | reverse %}
   {% for post in posts_by_date %}
@@ -14,3 +15,5 @@ permalink: /blog/
     </li>
   {% endfor %}
 </ul>
+
+<p><a href="{{ '/archives/' | relative_url }}">Browse the Archives →</a></p>

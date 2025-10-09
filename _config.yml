@@ -5,13 +5,10 @@ baseurl: "" # or "/<repo>" if publishing from a project site
 markdown: kramdown
 theme: null
 plugins:   # keep GitHub Pages–native only (none required)
-permalink: /blog/:year/:month/:day/:title/
+permalink: /:title/
 collections:
   posts:
     output: true
 defaults:
-  - scope: {path: "", type: posts}
-    values:
-      layout: post
-      author: ""
-      tags: []
+  - scope: { path: "", type: posts }
+    values: { layout: post, tags: [] }
