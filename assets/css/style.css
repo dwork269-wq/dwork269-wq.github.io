@@ -23,6 +23,15 @@ body {
   text-decoration: none;
 }
 
+a.tag,
+a.tag:link,
+a.tag:visited,
+a.tag:hover,
+a.tag:active,
+a.tag:focus {
+  text-decoration: none !important;
+}
+
 /* Type scale that adapts with viewport (clamp(min, vw, max)) */
 body {
   font-size: clamp(16px, 1.8vw, 18px);
