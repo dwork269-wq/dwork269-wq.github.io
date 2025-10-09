@@ -1,6 +1,6 @@
 title: miruvor
 description: "Minimalist, fast, Markdown-first blog."
-url: "https://<your-username>.github.io"
+url: "https://dwork269-wq.github.io"
 baseurl: "" # or "/<repo>" if publishing from a project site
 markdown: kramdown
 theme: null
