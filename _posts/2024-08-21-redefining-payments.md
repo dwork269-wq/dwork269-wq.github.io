@@ -9,7 +9,7 @@ permalink: /redefining-payments/
 
 Today's payment system is bloated and dominated by entrenched interests. This article proposes a crypto-based framework to eliminate banks and payment networks as intermediaries, solving issues like high interchange fees that burden merchants.
 
-![Payment System Diagram]({{ "/assets/img/_image.png" | relative_url | uri_escape }})
+![Payment System Diagram]({{ "/assets/img/image.png" | relative_url | uri_escape }})
 
 ## Current System Challenges
 
