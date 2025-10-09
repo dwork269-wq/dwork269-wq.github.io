@@ -24,21 +24,47 @@ permalink: /search/
 
 <div id="allPosts">
   <h2>All Posts</h2>
-  <ul class="post-list">
+  <div class="blog-posts">
+  {% assign current_year = "" %}
+  {% assign current_month = "" %}
   {% for post in site.posts %}
+    {% assign post_year = post.date | date: "%Y" %}
+    {% assign post_month = post.date | date: "%B" %}
+    
+    {% if current_year != post_year %}
+      {% if current_year != "" %}
+        </ul>
+      {% endif %}
+      <h3 class="year-header">{{ post_year }}</h3>
+      <ul class="post-list">
+      {% assign current_year = post_year %}
+      {% assign current_month = "" %}
+    {% endif %}
+    
+    {% if current_month != post_month %}
+      {% if current_month != "" %}
+        </ul>
+      {% endif %}
+      <h4 class="month-header">{{ post_month }}</h4>
+      <ul class="month-posts">
+      {% assign current_month = post_month %}
+    {% endif %}
+    
     <li data-title="{{ post.title | downcase }}" data-content="{{ post.content | strip_html | downcase }}" data-tags="{{ post.tags | join: ' ' | downcase }}">
-      <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+      <span class="post-date">{{ post.date | date: "%-d" }}</span>
       <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
       {% if post.tags and post.tags.size > 0 %}
         <span class="post-tags">
           {% for tag in post.tags %}
-            <span class="tag">{{ tag }}</span>
+            <a href="{{ '/tags/#' | append: tag | relative_url }}" class="tag">{{ tag }}</a>
           {% endfor %}
         </span>
       {% endif %}
     </li>
   {% endfor %}
+    </ul>
   </ul>
+  </div>
 </div>
 
 <script>
@@ -51,7 +77,7 @@ function searchPosts(event) {
     return;
   }
   
-  const allPosts = document.querySelectorAll('#allPosts .post-list li');
+  const allPosts = document.querySelectorAll('#allPosts .month-posts li');
   const results = [];
   
   allPosts.forEach(post => {
@@ -73,14 +99,37 @@ function searchPosts(event) {
 
 function displayResults(results, query) {
   const resultsList = document.getElementById('resultsList');
-  resultsList.innerHTML = '';
+  const searchResults = document.getElementById('searchResults');
+  const allPosts = document.getElementById('allPosts');
   
+  if (results.length === 0) {
+    displayNoResults(query);
+    return;
+  }
+  
+  // Group results by year and month
+  const groupedResults = {};
   results.forEach(result => {
-    resultsList.appendChild(result);
+    const dateText = result.querySelector('.post-date').textContent;
+    const link = result.querySelector('a');
+    const title = link.textContent;
+    const url = link.href;
+    const tags = result.querySelector('.post-tags');
+    const tagText = tags ? tags.textContent : '';
+    
+    // Create a date object from the day number (we need to get the full date)
+    const postElement = result;
+    const dataTitle = postElement.getAttribute('data-title');
+    const dataContent = postElement.getAttribute('data-content');
+    const dataTags = postElement.getAttribute('data-tags');
+    
+    // For now, just display results in a simple list
+    const resultItem = result.cloneNode(true);
+    resultsList.appendChild(resultItem);
   });
   
-  document.getElementById('searchResults').style.display = 'block';
-  document.getElementById('allPosts').style.display = 'none';
+  searchResults.style.display = 'block';
+  allPosts.style.display = 'none';
   
   // Highlight search terms
   highlightSearchTerms(query);

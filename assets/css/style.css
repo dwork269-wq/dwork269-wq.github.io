@@ -157,6 +157,48 @@ h3 {
   font-size: 0.75em;
   font-weight: 500;
   text-transform: lowercase;
+  text-decoration: none;
+  display: inline-block;
+  margin-right: 0.3rem;
+}
+
+.tag:hover {
+  background: var(--link);
+  color: var(--bg);
+}
+
+/* Blog page styling */
+.blog-posts {
+  margin-top: 1rem;
+}
+
+.year-header {
+  font-size: 1.5em;
+  margin: 2rem 0 1rem 0;
+  color: var(--fg);
+  border-bottom: 1px solid var(--muted);
+  padding-bottom: 0.5rem;
+}
+
+.month-header {
+  font-size: 1.2em;
+  margin: 1.5rem 0 0.5rem 0;
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.month-posts {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem 0;
+}
+
+.month-posts li {
+  margin: 0.4rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.5rem;
 }
 
 blockquote {
@@ -313,6 +355,11 @@ mark {
   .post-tags {
     margin-left: 0;
     margin-top: 0.25rem;
+  }
+  .month-posts li {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.3rem;
   }
   .archive-grid {
     grid-template-columns: 58px 1fr;
