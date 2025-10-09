@@ -1,14 +1,10 @@
 title: miruvor
 description: "Minimalist, fast, Markdown-first blog."
 url: "https://dwork269-wq.github.io"
-baseurl: "" # or "/<repo>" if publishing from a project site
+baseurl: ""    # user site → keep empty
 markdown: kramdown
 theme: null
-plugins:   # keep GitHub Pages–native only (none required)
 permalink: /:title/
-collections:
-  posts:
-    output: true
 defaults:
   - scope: { path: "", type: posts }
     values: { layout: post, tags: [] }
