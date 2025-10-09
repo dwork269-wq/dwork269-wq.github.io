@@ -1,12 +1,17 @@
 ---
 ---
-<!doctype html>
+
+<!DOCTYPE html>
 <html lang="en">
-  <head>{% include head.html %}</head>
+  <head>
+    {% include head.html %}
+  </head>
   <body>
     <header class="site-header">
-      <a class="site-title" href="{{ '/' | relative_url }}">Miruvor</a>
-      {% include nav.html %}
+      <div class="header-content">
+        <a class="site-title" href="{{ '/' | relative_url }}">Miruvor</a>
+        {% include nav.html %}
+      </div>
     </header>
     <main class="container">{{ content }}</main>
     <footer class="site-footer">
