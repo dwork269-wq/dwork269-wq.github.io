@@ -1,0 +1,17 @@
+title: miruvor
+description: "Minimalist, fast, Markdown-first blog."
+url: "https://<your-username>.github.io"
+baseurl: "" # or "/<repo>" if publishing from a project site
+markdown: kramdown
+theme: null
+plugins:   # keep GitHub Pages–native only (none required)
+permalink: /blog/:year/:month/:day/:title/
+collections:
+  posts:
+    output: true
+defaults:
+  - scope: {path: "", type: posts}
+    values:
+      layout: post
+      author: ""
+      tags: []
