@@ -21,7 +21,7 @@ The perfect stablecoin would ideally be decentralized, non-volatile, and highly 
 
 The perfect stablecoin would remove governments from direct monetary control, leaving them to facilitate production without the inherent conflict of doing both.
 
-In this vein, I tried conceiving the perfect stablecoin and came up with [DebtCoin](https://miruvor.me/debtcoin-stablecoin) - a stablecoin tied to national debt. I thought it would be relatively inflation-resistant, given how inflation and national debt can be inversely correlated. Managing liquidity and reserve growth was tricky though. Still, it was a fun thought experiment.
+In this vein, I tried conceiving the perfect stablecoin and came up with [DebtCoin](/blog/debtcoin-stablecoin) - a stablecoin tied to national debt. I thought it would be relatively inflation-resistant, given how inflation and national debt can be inversely correlated. Managing liquidity and reserve growth was tricky though. Still, it was a fun thought experiment.
 
 For now, I think stablecoins are doing what they can: they're helping crypto take its first major strides toward real-world use cases, beyond just speculation or an instrument for the "revenge of the nerds"! They can also be a step toward breaking the monopoly of existing payment systems. Some competition and diversity in payments would be great to see.
 

@@ -30,7 +30,7 @@ Consider this user flow:
 
 ### Simple Interacts with Stablecoin Protocol
 
-- Simple owns a crypto wallet (or a set of crypto wallets, whichever is more secure from an operational standpoint) that has access to a yield-bearing stablecoin's protocol layer – let's use Mountain's USDM as an example, a crypto [I'm personally a fan of](https://miruvor.me/mountain-protocol-usdm-questions-ideas).
+- Simple owns a crypto wallet (or a set of crypto wallets, whichever is more secure from an operational standpoint) that has access to a yield-bearing stablecoin's protocol layer – let's use Mountain's USDM as an example, a crypto [I'm personally a fan of](/blog/mountain-protocol-usdm-questions-ideas).
 - Simple can interact directly with the stablecoin issuer to mint or burn stablecoins as needed.
 
 ### Stablecoin Issuer Manages Reserves

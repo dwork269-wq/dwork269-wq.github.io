@@ -25,7 +25,7 @@ If the memecoin isn't a total failure (which I expect, but hey, crazier things h
 
 In short, the DebtCoin memecoin will determine whether the DebtCoin stablecoin progresses.
 
-More about me on the [homepage](https://miruvor.me/) of this blog.
+More about me on the [homepage](/) of this blog.
 
 ## Social Channels
 

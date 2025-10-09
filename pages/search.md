@@ -56,7 +56,7 @@ permalink: /search/
       {% if post.tags and post.tags.size > 0 %}
         <span class="post-tags">
           {% for tag in post.tags %}
-            <a href="{{ '/tags/#' | append: tag | relative_url }}" class="tag">{{ tag }}</a>
+            <a href="{{ '/tags/#' | append: tag | slugify | relative_url }}" class="tag">{{ tag }}</a>
           {% endfor %}
         </span>
       {% endif %}

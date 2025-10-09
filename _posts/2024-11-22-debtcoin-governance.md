@@ -63,6 +63,6 @@ Governance will involve both the community and founding team. Voting structures 
 This framework establishes a balanced governance model for DebtCoin, blending immutable rules, flexible parameters, and hybrid decision-making. Future articles will detail voting systems and community-driven proposals.
 
 > This is the third article in a 3-part series on DebtCoin: \
-> [DebtCoin: A Stablecoin Pegged to the United States National Debt](https://miruvor.me/debtcoin-stablecoin) \
-> [DebtCoin: Reserve Management](https://miruvor.me/debtcoin-reserves) \
-> [DebtCoin: Governance Framework](https://miruvor.me/debtcoin-governance) (current)
+> [DebtCoin: A Stablecoin Pegged to the United States National Debt](/blog/debtcoin-stablecoin) \
+> [DebtCoin: Reserve Management](/blog/debtcoin-reserves) \
+> [DebtCoin: Governance Framework](/blog/debtcoin-governance) (current)

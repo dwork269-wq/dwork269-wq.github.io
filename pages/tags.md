@@ -5,22 +5,36 @@ permalink: /tags/
 ---
 
 # Tags
-{% assign tag_map = {} %}
-{% for p in site.posts %}
-  {% for t in p.tags %}
-    {% if tag_map[t] %}{% assign tag_map = tag_map | merge: { t: tag_map[t] | push: p } %}
-    {% else %}{% assign tag_map = tag_map | merge: { t: [p] } %}{% endif %}
-  {% endfor %}
-{% endfor %}
 
-<ul>
-{% for t in tag_map %}
-  <li id="{{ t[0] }}"><strong>{{ t[0] }}</strong>
-    <ul>
-      {% for p in t[1] %}
-        <li><a href="{{ p.url | relative_url }}">{{ p.title }}</a></li>
-      {% endfor %}
-    </ul>
-  </li>
+{% capture tags %}
+{% for tag in site.tags %}
+{{ tag[0] }}
 {% endfor %}
-</ul>
+{% endcapture %}
+{% assign sortedtags = tags | split:' ' | sort %}
+
+<div class="tags-list">
+  {% for tag in sortedtags %}
+    {% if tag != "" %}
+      <a href="#{{ tag | slugify }}" class="tag" style="margin: 0.5rem 0.5rem 0 0; display: inline-block;">{{ tag }}</a>
+    {% endif %}
+  {% endfor %}
+</div>
+
+<div style="margin-top: 2rem;">
+  {% for tag in sortedtags %}
+    {% if tag != "" %}
+      <div id="{{ tag | slugify }}" style="margin-bottom: 2rem;">
+        <h2 style="margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 1px solid var(--muted);">{{ tag }}</h2>
+        <ul class="post-list">
+          {% for post in site.tags[tag] %}
+            <li>
+              <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+              <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    {% endif %}
+  {% endfor %}
+</div>

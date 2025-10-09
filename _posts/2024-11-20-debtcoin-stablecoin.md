@@ -51,6 +51,6 @@ Tokens are minted upon deposit and burned upon withdrawal, maintaining supply co
 DebtCoin combines strong security, reliable price feeds, and practical use. It critiques fiscal policy while offering features for yield farming, lending, and liquidity. DebtCoin aims to redefine stablecoins, blending functionality and transparency in an innovative way.
 
 > This is the first article in a 3-part series on DebtCoin: \
-> [DebtCoin: A Stablecoin Pegged to the United States National Debt](https://miruvor.me/debtcoin-stablecoin) (current) \
-> [DebtCoin: Reserve Management](https://miruvor.me/debtcoin-reserves) \
-> [DebtCoin: Governance Framework](https://miruvor.me/debtcoin-governance)
+> [DebtCoin: A Stablecoin Pegged to the United States National Debt](/blog/debtcoin-stablecoin) (current) \
+> [DebtCoin: Reserve Management](/blog/debtcoin-reserves) \
+> [DebtCoin: Governance Framework](/blog/debtcoin-governance)

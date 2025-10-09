@@ -167,6 +167,14 @@ h3 {
   color: var(--bg);
 }
 
+/* Tags page styling */
+.tags-list {
+  margin: 2rem 0;
+  padding: 1rem;
+  background: rgba(139, 148, 158, 0.1);
+  border-radius: 6px;
+}
+
 /* Blog page styling */
 .blog-posts {
   margin-top: 1rem;

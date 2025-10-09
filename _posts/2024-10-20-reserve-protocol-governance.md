@@ -52,5 +52,5 @@ Reserve models its governance on Compound but avoids over-delegation issues that
 I'll continue watching their videos (they're clear and accessible, the founders' transparency builds trust). I'll also join their communities, buy some RSR, and observe their governance mechanisms firsthand.
 
 > This article is part of a series on the Reserve Protocol: \
-> [Notes on the Reserve Protocol — Governance](https://miruvor.me/reserve-protocol-governance) (current) \
-> [Notes on the Reserve Protocol — Arbitrage](https://miruvor.me/reserve-protocol-arbitrage)
+> [Notes on the Reserve Protocol — Governance](/blog/reserve-protocol-governance) (current) \
+> [Notes on the Reserve Protocol — Arbitrage](/blog/reserve-protocol-arbitrage)
