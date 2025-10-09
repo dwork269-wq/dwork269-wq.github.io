@@ -264,6 +264,35 @@ pre code {
   background: #4a9eff;
 }
 
+/* Search results styling */
+#searchResults {
+  margin-top: 1rem;
+}
+
+#searchResults h2 {
+  margin-bottom: 1rem;
+  color: var(--fg);
+}
+
+#resultsList {
+  margin-bottom: 1rem;
+}
+
+#resultsList .post-list {
+  margin: 0;
+}
+
+#resultsList .post-list li {
+  margin: 0.55rem 0;
+}
+
+mark {
+  background: rgba(88, 166, 255, 0.3);
+  padding: 0.1em 0.2em;
+  border-radius: 2px;
+  color: inherit;
+}
+
 /* Small screens: stack header & widen touch targets */
 @media (max-width: 700px) {
   .header-content {
