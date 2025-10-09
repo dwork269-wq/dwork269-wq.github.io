@@ -4,6 +4,8 @@ title: Founder
 permalink: /founder/
 ---
 
-# Hi! I’m Rahul!
+# Founder
 
-Short bio paragraph(s) … 
+This page contains information about the founder of Miruvor.
+
+_Content to be added._

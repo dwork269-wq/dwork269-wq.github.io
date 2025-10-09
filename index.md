@@ -6,15 +6,18 @@ permalink: /
 
 # Welcome to Miruvor!
 
-<p>Intro paragraph about the studio and focus (stablecoins, payments, etc.).</p>
+We're an independent studio based in Washington, D.C., focused on researching and building in the stablecoins and payments space and excited about how blockchain can change things for the better.
 
 Currently working on four core efforts:
 
-1. <strong>Medici.ac</strong>: short description + call to connect.
-2. <strong>Mondeum.xyz</strong>: brief line.
-3. <strong>StableResearch.xyz</strong>: brief line.
-4. <strong>Infrastructure</strong>: brief line.
+1. **Medici.ac**: A peer-to-peer platform where donors pick verified students, choose any amount and fund their education securely and directly on the blockchain. Laying the foundation for human capital to become a fundable asset class.  
+   _Reach out if you are interested in donating to the project or can connect us to donors, students or academic institutions. We've received some funding and are actively seeking additional grants._
+2. **Mondeum.xyz**: An ambitious cross-border fiat-backed stablecoin exchange aimed at driving both USD and non-USD stablecoin usage across the world.  
+   _Again, we're actively seeking grants and feedback!_
+3. **StableResearch.xyz**: Custom research and tools to help users, builders and policymakers understand the rapidly evolving world of stablecoins and modern finance.  
+   _Reach out if you're looking for bespoke research or collaboration._
+4. **Infrastructure**: Payments infrastructure and smart contracts across EVM and SVM ecosystems to power real-world stablecoin use.
 
-We move fast, build lean and welcome partnerships.
+We move fast, build lean and always welcome partnerships.
 
 Big plans ahead. Stay tuned!
