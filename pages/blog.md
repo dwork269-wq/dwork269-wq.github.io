@@ -32,16 +32,18 @@ permalink: /blog/
 {% endif %}
 
   <li>
-    <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-    {% if post.tags and post.tags.size > 0 %}
-      <span class="post-tags">
-        {% for tag in post.tags %}
-          {% assign slug = tag | strip | slugify: 'default' %}
-          {% capture tag_id %}{{ slug | slice: 0,1 | upcase }}{{ slug | slice: 1, 200 }}{% endcapture %}
-          <a href="{{ '/tags/#' | append: tag_id | relative_url }}" class="tag">{{ tag }}</a>
-        {% endfor %}
-      </span>
-    {% endif %}
+    <div class="blog-list">
+      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      {% if post.tags and post.tags.size > 0 %}
+        <span class="post-tags">
+          {% for tag in post.tags %}
+            {% assign slug = tag | strip | slugify: 'default' %}
+            {% capture tag_id %}{{ slug | slice: 0,1 | upcase }}{{ slug | slice: 1, 200 }}{% endcapture %}
+            <a href="{{ '/tags/#' | append: tag_id | relative_url }}" class="tag">{{ tag }}</a>
+          {% endfor %}
+        </span>
+      {% endif %}
+    </div>
   </li>
 {% endfor %}
 

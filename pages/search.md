@@ -80,6 +80,7 @@ permalink: /search/
       data-title="{{ post.title | downcase }}"
       data-content="{{ post.content | strip_html | downcase }}"
       data-tags="{{ post.tags | join: ' ' | downcase }}"
+      class="blog-list"
     >
       <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
       {% if post.tags and post.tags.size > 0 %}
