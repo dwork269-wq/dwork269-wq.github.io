@@ -17,5 +17,35 @@
     <footer class="site-footer">
       <small>&copy; {{ site.time | date: "%Y" }}</small>
     </footer>
+    <script>
+      // Theme toggle functionality
+      (function () {
+        const toggleBtn = document.getElementById("themeToggle");
+        const themeIcon = toggleBtn.querySelector(".theme-icon");
+
+        // Get current theme
+        function getCurrentTheme() {
+          return document.documentElement.getAttribute("data-theme") || "dark";
+        }
+
+        // Update icon based on theme
+        function updateIcon(theme) {
+          themeIcon.textContent = theme === "dark" ? "🌙" : "☀️";
+        }
+
+        // Initialize icon
+        updateIcon(getCurrentTheme());
+
+        // Toggle theme on button click
+        toggleBtn.addEventListener("click", function () {
+          const currentTheme = getCurrentTheme();
+          const newTheme = currentTheme === "dark" ? "light" : "dark";
+
+          document.documentElement.setAttribute("data-theme", newTheme);
+          localStorage.setItem("theme", newTheme);
+          updateIcon(newTheme);
+        });
+      })();
+    </script>
   </body>
 </html>
