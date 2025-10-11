@@ -181,9 +181,6 @@ function performSearch(q) {
   document.getElementById('emptyState').style.display = 'none';
   document.getElementById('searchResults').style.display = 'block';
   
-  if (q) {
-    highlightSearchTerms(q);
-  }
 }
 
 function searchPosts(event){
@@ -204,17 +201,6 @@ function clearSearch(){
   selectedTags = [];
   document.querySelectorAll('.tag-filter-item input[type="checkbox"]').forEach(cb => {
     cb.checked = false;
-  });
-}
-
-function highlightSearchTerms(q){
-  const terms = q.split(' ').filter(Boolean);
-  const links = document.querySelectorAll('#resultsList a');
-  links.forEach(a => {
-    let html = a.innerHTML;
-    terms.forEach(t => html = html.replace(new RegExp(`(${t})`,'gi'),
-      '<mark style="background: rgba(88,166,255,.3); padding:.1em .2em; border-radius:2px;">$1</mark>'));
-    a.innerHTML = html;
   });
 }
 
