@@ -407,7 +407,7 @@ h3 {
 }
 
 .blog-list {
-  display: flex;
+  display: flex !important;
   flex-wrap: wrap;
   align-items: baseline;
   gap: 0.5rem;
