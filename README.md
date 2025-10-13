@@ -73,26 +73,6 @@ Edit `_config.yml` to change:
 - URL settings
 - Permalink structure
 
-## Local Development
-
-To preview your site locally:
-
-```bash
-# Install Jekyll (one-time setup)
-gem install bundler jekyll
-
-# Create a Gemfile if you don't have one
-echo "source 'https://rubygems.org'\ngem 'github-pages', group: :jekyll_plugins" > Gemfile
-
-# Install dependencies
-bundle install
-
-# Run the development server
-bundle exec jekyll serve
-
-# Visit http://localhost:4000 in your browser
-```
-
 ## Deployment
 
 This site is designed for GitHub Pages:

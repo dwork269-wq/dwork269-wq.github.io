@@ -244,7 +244,6 @@ Code blocks have dark background:
 
 - `index.md` - Home page with full content
 - `_config.yml` - Site configuration
-- `Gemfile` - Ruby dependencies
 
 ### Layouts
 
@@ -286,5 +285,3 @@ Code blocks have dark background:
 ## 🎉 Ready to Launch!
 
 Your blog is production-ready and can be deployed to GitHub Pages immediately. All content matches the original Miruvor site with the addition of a beautiful dark theme.
-
-See `QUICKSTART.md` to get started! 🚀
