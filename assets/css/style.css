@@ -406,8 +406,8 @@ h3 {
   color: var(--muted);
 }
 
-.month-posts li.blog-list {
-  display: flex;
+.blog-list {
+  display: flex !important;
   flex-wrap: wrap;
   align-items: baseline;
   gap: 0.5rem;
