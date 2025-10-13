@@ -32,7 +32,7 @@ permalink: /blog/
 {% endif %}
 
   <li>
-    <div class="blog-list">
+    <div class="blog-list-inline">
       <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
       {% if post.tags and post.tags.size > 0 %}
         <span class="post-tags">
